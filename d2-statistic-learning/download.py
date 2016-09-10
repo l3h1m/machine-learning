@@ -18,11 +18,11 @@ filenames=[["Groundnut",Ground_url],["Ladies_Finger",lf_url],["Sugarcane",Sugar_
 
 for i in filenames:
 
-	os.system("mkdir"+i[0]+"/" ")
+	os.system("mkdir"+i[0]+"/")
 	os.chdir(i[0]+"/")
 	count=0
-	print i
-	print count
+	print (i) 
+	print count 
 	for j in i[1]:
 		f=open(str(count)+".xml","w")
 		try:
